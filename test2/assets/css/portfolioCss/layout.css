@@ -1,0 +1,340 @@
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+/**body {
+	font-family: Helvetica, Arial, Verdana;
+	background: #efefef url('../img/ticks.png') repeat 0 0;
+	margin:15px 0 0 0;
+	font-size:12px;
+}**/
+
+#info {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;				
+	background:#fcf8e3;
+	border:1px solid  #fbeed5;
+	width:95%;
+	max-width:900px;
+	margin:0 auto 40px auto;
+	font-family:arial;
+	font-size:12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+	#info .info-wrapper {
+		padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	}
+	
+	#info a {
+		color:#c09853;
+		text-decoration:none;
+	}
+	
+	#info p {
+		margin:5px 0 0 0;
+	}
+
+
+.container { 
+	position: relative; 
+	width: 960px; 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+ 
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #e95a44;
+		color:#fff;
+	}
+ 
+
+ 
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:23%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		bottom:-40px;
+	}
+
+		.portfolio .label-bg {
+			background: #e95a44;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+                display:block;
+				font-size:11px;
+                 margin-top: 2px;
+                padding-bottom: 3px;
+			}
+	
+/** Zach Added**/
+h8 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.portfolio .text-title {
+                display:block;
+                color: #fff;
+				font-size:14px;
+                 padding: 1px;
+			}
+	
+
+h8:hover {
+color: #a0cafa;
+}
+
+/* Nav */
+
+nav {
+float:right;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+#narrow {
+    margin:10px;
+    padding-bottom:10px;
+}
+
+.centered {
+    padding-top:1px;
+    text-align: center;
+}
+
+.xcentered {
+    padding-top:10px;
+    color:gray;
+    text-align: center;
+    font-family: "BebasNeue";
+    src: url('assets/fonts/BebasNeue.otf');
+}
+
+
+/** Implement later 
+.myimg {
+width: 100%;
+height: 100%;    
+}
+**/
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+	
+	#ads {
+		display:none;
+	}
+	
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+
+<!--Random Bootstrap-->
+.container2 {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.container2:before,
+.container2:after {
+  display: table;
+  content: " ";
+}
+
+.container2:after {
+  clear: both;
+}
+
+.container2:before,
+.container2:after {
+  display: table;
+  content: " ";
+}
+
+.container2:after {
+  clear: both;
+}
+ 
+.mytab {
+padding-left:100px;
+padding-right:50px;   
+position: relative;
+float: center;
+}
+
+#headerwrap {
+	background-color: #34495e;
+	padding-top: 40px;
+}
+
+#headerwrap h1 {
+	margin-top: 40px;
+	color: white;
+	font-size: 70px;
+	
+}
+
+ h10, h8, h9 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 50px;
+  margin-bottom: 20px;
+    padding-bottom:10px;
+    font-size: 70px;
+     color: #3299d3;
+        }
+
+h11 {
+    font-family: "Raleway";
+    font-weight: 300;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+        

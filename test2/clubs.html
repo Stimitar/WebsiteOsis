@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>SMKN 5 OSIS </title>
+	<meta name="description" content="Sekolah Menengah Kejuruan 5 Bandung">
+	<meta name="author" content="Hantuu">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="foto/smkn5.jpg">
+
+    
+    
+    
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    
+    
+      
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+      <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+	<link rel="stylesheet" href="assets/css/portfolioCss/layout.css">
+    
+	<link rel="stylesheet" href="assets/css/portfolioCss/normalize.css">
+
+	
+		
+	
+    
+	<script type="text/javascript" src="assets/js/portfolioJs/jquery.main.min.js"></script>	
+    <script type="text/javascript" src="assets/js/portfolioJs/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="assets/js/portfolioJs/jquery.mixitup.min.js"></script>
+    
+    <!--bootstrap-->
+   
+
+    
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+
+
+<!--div id="info">
+	<div class="info-wrapper">
+		
+	</div>
+</div-->	 <body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+    <!-- Fixed navbar -->
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	      <div class="container2">
+	        <div class="mytab">
+              <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	         
+                <a class="navbar-brand" href="./index.html"><b>OSIS</b></a>
+            </div>   
+              
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="./index.html" class="smothscroll">Home</a></li>
+                  
+	            <li><a href="index.html#desc" class="smothscroll">Visi Misi</a></li>
+                  
+                  <li class="dropdown active">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                     <li><a href="clubs.html">Foto</a></li>
+                      <li><a href="./finances.html">Sejarah Sekbid</a></li>
+                      <li><a href="./facilities.html">Credit</a></li>
+                    </ul>
+                </li>
+                  
+                  
+	            <li><a href="index.html#showcase" class="smothScroll">Sekolah</a></li>
+                
+	            <li><a href="#contact" class="smothScroll">Contact</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+    </div> <!--nav-->        
+     
+ 
+        <!--Header-->
+  	<section id="home" name="home"></section>
+	<div id="headerwrap">
+	    <div class="container">
+	    	<div class="row centered">
+	    		<div class="col-lg-12">
+					<h10>SMKN 5 OSIS SEKBID 1</h10>
+                    <br><br>
+					<h11>Official Website Osis Sekbid 1</h11>
+					<br><br>
+	    		</div>
+	    		
+	    		
+                    
+	    		</div>
+	    		
+	    </div> <!--/ .container -->
+	</div><!--/ #headerwrap -->
+
+    
+    
+<body>
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+			<li><span class="filter" data-filter="app">Anggota</span></li>
+			<li><span class="filter" data-filter="card">Dokumentasi</span></li>
+			<li><span class="filter" data-filter="icon">teing naon</span></li>
+		</ul>
+                
+        
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="Fotozaki.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="Fotozaki.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="Fotozaki.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+					<a class="text-title"> Abb</a>
+				    <span class="text-category">Info</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="Fotozaki.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+                            <a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="Fotozaki.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+				            <a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+                                <a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png"d alt="" />
+					<div class="label">
+						<div class="label-text">
+						  <a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img class="myimg" src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						  <a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img class="myimg" src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="assets/img/portfolios/hold.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+						<a class="text-title"> Abb</a>
+							<span class="text-category">Info</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+										
+			
+		</div>
+		
+	</div><!-- container -->
+    
+<!--    
+    {
+    academic: [
+        abrev: [AIChE, ASME, BMES, BioEHS, MSEA  ]
+        full: [ American Institute of Chemical Engineers, American Society of Mechanical Engineers, BioMedical Engineering Society, BioEngineering Honor Society, Materials Science Engineering Association ]
+        link: []
+    ]
+    
+    pro: [
+        abrev: [TBP, Theta Tau, ]
+        full: [ Tau Beta Pi, Theta Tau ]
+        link: []
+    ]
+    competition: [
+        abrev: [CALSOL, SAE, HPV,]
+        full: [  ]
+        link: []
+    ]
+
+    outreach:  [
+        abrev: [BEAM, EWB, EWH, E4K ]
+        full: [Berkeley Engineers And Mentors, Engineers Without Borders, Engineering World Health, Engineering 4 Kids ]
+        link: []
+    ]
+    
+    interest: [
+        abrev: [CALSOL, SAE, HPV,]
+        full: [  ]
+        link: []
+    ]
+    
+
+    }
+-->
+    
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+	<script>
+	$('.carousel').carousel({
+	  interval: 3500
+	})
+	</script>
+</body>
+</html>
